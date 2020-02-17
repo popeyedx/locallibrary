@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+
+<form action="" method="POST">
+  <div class="form-group">
+    <labal for="name" style="margin-bottom:5px;display:block;">Genre: </labal>
+    <input id="name" class="form-control" type="text" placeholder="Fantasy, Poetry etc." name="name" value="{{genre.name}}" required="true">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{{#each errors}}
+  <ul style="margin-top:5px;color:red;">
+    <li>{{msg}}</li>
+  </ul>
+{{/each}}
